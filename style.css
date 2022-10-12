@@ -1,3 +1,37 @@
+body{
+    height: 100vh;
+    margin: 0; 
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 #container {
+    height: 100%;
+    width: 100%;
     display: flex;
+    justify-content: center;
+}
+
+#image-side {
+    flex: 0 0 25%;
+    border: 10px solid red;
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+#left-image{
+    max-width: 100%;
+}
+
+#form-side {
+    flex: 0 0 75%;
+    border: 10px solid blue;
+    min-width: 0;
+    flex-shrink: 1;
+
 }
