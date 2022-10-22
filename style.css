@@ -19,7 +19,6 @@ body{
 
 .image-side {
     flex: 0 0 25%;
-    border: 10px solid red;
     min-width: 0;
     flex-shrink: 1;
     overflow: hidden;
@@ -53,11 +52,23 @@ body{
 
 .form-side {
     flex: 0 0 75%;
-    border: 10px solid blue;
     min-width: 0;
     flex-shrink: 1;
     display: flex;
     flex-direction: column;
+    margin-left: 1.5em;
+}
+
+.dummy-text, .form-container, .submit-button, .log-in {
+    margin: 3.5em;
+    margin-left: 1em
+}
+
+.dummy-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-top: 1em
 }
 
 .form-container {
