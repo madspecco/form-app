@@ -1,8 +1,11 @@
-body{
+body, html{
     height: 100vh;
+    width: 100vw;
     margin: 0; 
     padding: 0;
     font-family: monospace, "Times New Roman", Times, serif;
+
+    background-image: url(./placeholder.png);
 }
 
 #form {
@@ -28,20 +31,12 @@ body{
     position: relative; /*this is necessary for position: absolute in the child*/
 }
 
-.left-image {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
-
-
-
 .image-side .logo-content {
     flex: 0 0 100%;
     position: absolute; /* like over here ^*/
     
     background-color: rgb(18, 21, 21, 0.8);
-    top: 7em;
+    top: 2em;
     
     width: 100%;
     color: #f1f1f1;
@@ -89,11 +84,10 @@ body{
     display: flex;
     flex-direction: column;
     margin-left: 1.5em;
-    
 }
 
-.dummy-text, .form-container, .submit-button, .log-in {
-    margin: 3.5em;
+.dummy-text, .form-container, .submit-button{
+    margin: 5em;
     margin-left: 1em;
     color: #b4664a;
 }
@@ -146,6 +140,13 @@ button:hover {
 
 a, a:visited {
     color: #b4664a;
+}
+
+.log-in {
+    display: flex;
+    flex-direction: column;
+    color: #b4664a;
+    gap: 2.5em;
 }
 
 /*for coloring out the input fields*/
